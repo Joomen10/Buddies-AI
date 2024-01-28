@@ -21,16 +21,41 @@ pip install gTTS
 ## Usage
 
 ```python
-import foobar
 
-# returns 'words'
-foobar.pluralize('word')
+def main():
+        st.title("Upload your PDF Document")
+        pdf = st.file_uploader('', type='pdf')
+        if pdf is not None:
+            pdf_reader = PdfReader(pdf)
+            text = ""
+            for page in pdf_reader.pages:
+                text += page.extract_text()
+            
+            knowledgeBase = process_text(text)
+            
+            query = st.text_input('Ask a question to the PDF')
+            cancel_button = st.button('Cancel')
+            
+            if cancel_button:
+                st.stop()
+            
+            if query:
+                docs = knowledgeBase.similarity_search(query)
+                chain = load_qa_chain(llm=OpenAI(), chain_type="stuff")
+                response = chain.run(input_documents=docs, question=query)
+                            
+                with get_openai_callback() as cost:
+                    response = chain.run(input_documents=docs, question=query)
+                    print(cost)
+                    
+                st.write(response)
+                text_to_speech(response)
+  
+                
 
-# returns 'geese'
-foobar.pluralize('goose')
-
-# returns 'phenomenon'
-foobar.singularize('phenomena')
+            
+if __name__ == "__main__":
+    main()
 ```
 
 ## Contributing
