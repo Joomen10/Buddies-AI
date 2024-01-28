@@ -43,8 +43,8 @@ image_path = "images/brand_logo2.png"
 with st.container():
     text_column, image_column = st.columns((2,1))
     with text_column:
-        st.subheader("This is Buddies AI.")
-        st.title("P.A.B (Personal AI Buddies)")
+        st.subheader("")
+        st.title("Buddies AI for Elderly")
         st.write(
         "We provide personal AI assistence for elders to navigate the fast-changing world!"
         )
@@ -54,11 +54,11 @@ with st.container():
 # ---- INTRO SECTION ----
 with st.container():
     st.write("---")
-    st.header("What Our Company Does and Why Us?")
+    st.header("What Our ChatBot Does and Why Us?")
     st.write("##")
     st.write("""
-    Buddies AI aims to create a seamless AI environment for the global community.
-    With our company, we provide servieces for people, especially elders, who:
+    Buddies AI ChatBot aims to create a seamless AI environment for the global community.
+    With our ChatBot, we provide servieces for people, especially elders, who:
     """)
     
     st.info("1. are looking for a way to live their lives in this fact-changing world much easier and more convinient.")
