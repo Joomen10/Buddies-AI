@@ -11,9 +11,7 @@ Experience effortless technology with Buddies AI, bridging the elderly and the d
 2. Personalized assistance in understanding and using new technological tools, making life simpler and more connected.
 3. Expertise in breaking down long, complex documents into manageable, easy-to-understand formats, ideal for those who struggle with extensive reading.
 
-<img width="1213" alt="Screenshot 2024-01-28 at 12 13 00 PM" src="https://github.com/leiassyun/Buddies_AI/assets/121903773/0c7cd6e3-c876-4c36-b27e-4409d978b2a9">
-
-<img width="1187" alt="Screenshot 2024-01-28 at 12 35 30 PM" src="https://github.com/leiassyun/Buddies_AI/assets/121903773/ae44f8e8-6733-4927-8535-0d7be44b54ae">
+<img alt="Screenshot 2024-01-28 at 12 13 00 PM" src="https://github.com/leiassyun/Buddies_AI/assets/121903773/0c7cd6e3-c876-4c36-b27e-4409d978b2a9" width="200"/> <img alt="Screenshot 2024-01-28 at 12 35 30 PM" src="https://github.com/leiassyun/Buddies_AI/assets/121903773/ae44f8e8-6733-4927-8535-0d7be44b54ae" width="300"/>
 
 
 ## Installation
