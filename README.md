@@ -2,7 +2,7 @@
 
 # Buddies_AI
 
-Buddies_AI is a website coded with python and streamlit that allows the elders to input a pdf file and interact with an AI Chatbot with possible questions. If needed, users can activate a voice-reading feature for the answer that the OpenAI assistant responded. 
+Buddies_AI is a website coded with python and streamlit that allows the elders to input a pdf file and interact with an AI Chatbot with possible questions. If needed, users can activate a voice-reading feature with gTTP for the answer that the OpenAI assistant responded. 
 
 # What Buddies AI Can Do For You
 Experience effortless technology with Buddies AI, bridging the elderly and the digital world. Our chatbot empowers those challenged by technology, offering:
