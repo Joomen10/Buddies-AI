@@ -1,4 +1,3 @@
-
 from dotenv import load_dotenv
 import os
 from PyPDF2 import PdfReader
@@ -12,50 +11,25 @@ from langchain.llms import OpenAI
 import tiktoken
 from langchain.callbacks import get_openai_callback
 import openai
+from text2voice import text_to_speech
 
 load_dotenv()
 
 def process_text(text):
-    #tokenizer = tiktoken.get_encoding("cl100k_base")
     text_splitter = CharacterTextSplitter(
         separator="\n",
         chunk_size=1000,
         chunk_overlap=200,
         length_function=len
     )
-    #token_encoding = tiktoken.get_encoding(text)
     chunks = text_splitter.split_text(text)
-    #tokens = davinci_tokenizer.tokenize(chunks)
-    #embeddings = OpenAIEmbeddings(model="davinci-002")
-    #knowledgeBase = FAISS.from_texts(chunks, embeddings)
-
-    
-    comparison_dict = {}
-    embeddings_list = []
-
-    #for example_string in chunks:
-        # Removed the update to comparison_dict as it wasn't defined in your original code
- 
-        #embeddings_list.append(OpenAIEmbeddings(response))  # Assuming OpenAIEmbeddings can process the response
-    #tokenizer = tiktoken.get_encoding(encoding_name)
+   
+    os.environ["OPENAI_API_KEY"] = os.getenv('MY_API_KEY')
     embeddings = OpenAIEmbeddings()
     knowledgeBase = FAISS.from_texts(chunks, embeddings)
-    #knowledgeBase = FAISS.from_texts(chunks, embeddings_list)  # Assuming FAISS.from_texts can handle the list of embeddings
+
     return knowledgeBase
    
-
-def get_encoding_lengths(example_string: str) -> None:
-    results = {}
-    for encoding_name in ["gpt2", "p50k_base", "cl100k_base"]:
-        encoding = tiktoken.get_encoding(encoding_name)
-        token_integers = encoding.encode(example_string)
-        num_tokens = len(token_integers)
-        results[encoding_name] = num_tokens
-    return {example_string: results}
-
-
-        
-                
 def main():
     st.title("pdf")
     pdf = st.file_uploader('Upload your PDF Document', type='pdf')
@@ -75,7 +49,6 @@ def main():
         
         if query:
             docs = knowledgeBase.similarity_search(query)
-            llm = OpenAI()
             chain = load_qa_chain(llm=OpenAI(), chain_type="stuff")
             response = chain.run(input_documents=docs, question=query)
                         
@@ -84,6 +57,10 @@ def main():
                 print(cost)
                 
             st.write(response)
+            text_to_speech(response)
+            
+            
+
             
 if __name__ == "__main__":
     main()
