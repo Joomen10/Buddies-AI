@@ -16,6 +16,8 @@ pip install tiktoken
 pip install PyPDF2
 pip install text2voice
 pip install gTTS
+pip install python
+pip install openai 
 ```
 
 ## Usage
