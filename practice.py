@@ -29,10 +29,6 @@ def process_text(text):
     #embeddings = OpenAIEmbeddings(model="davinci-002")
     #knowledgeBase = FAISS.from_texts(chunks, embeddings)
 
-    os.environ["OPENAI_API_KEY"] = "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"
-    openai.api_key = "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"
-
-
     
     comparison_dict = {}
     embeddings_list = []
