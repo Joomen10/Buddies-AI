@@ -82,7 +82,7 @@ with st.container():
             """)
 
         
-    #st.write("""Below is our Beta version of JPG summarizer service. 
+    #st.write(""")Below is our Beta version of JPG summarizer service. 
 
       #  """)
     image_column, text_column = st.columns((1, 2))
@@ -149,7 +149,6 @@ with st.container():
     st.header("Inquiry Form: Let's Explore Together")
     st.write("##")
 
-    # Documention: https://formsubmit.co/ !!! CHANGE EMAIL ADDRESS !!!
     contact_form = """
     <form action="https://formsubmit.co/jjjr0617@gmail.com" method="POST">
         <input type="hidden" name="_captcha" value="false">
