@@ -22,6 +22,11 @@ Use the package manager [pip](https://pip.pypa.io/en/stable/) to install Buddies
 pip install -r requirements.txt
 ```
 
+## DEMO
+
+https://github.com/leiassyun/Buddies_AI/assets/121749634/aec12ad1-8681-4d57-88c3-43ab000a7f49
+
+
 
 # Contributing
 
