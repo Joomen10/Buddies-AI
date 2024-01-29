@@ -24,7 +24,10 @@ pip install -r requirements.txt
 
 ## DEMO
 
-https://github.com/leiassyun/Buddies_AI/assets/121749634/aec12ad1-8681-4d57-88c3-43ab000a7f49
+https://github.com/leiassyun/Buddies_AI/assets/121749634/f6bf2a23-b993-4139-8bcb-9b623d6d90b3
+
+
+
 
 
 
