@@ -1,5 +1,5 @@
 ### LikeLion Hackathon
-
+LIKELION US Hackathon Project
 # Buddies_AI
 
 Buddies_AI is a website coded with python and streamlit that allows the elders to input a pdf file and interact with an AI Chatbot with possible questions. If needed, users can activate a voice-reading feature with gTTP for the answer that the OpenAI assistant responded. 
