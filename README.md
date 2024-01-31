@@ -2,10 +2,10 @@
 LIKELION US Hackathon Project
 # Buddies_AI
 
-Buddies_AI is a website coded with python and streamlit that allows the elders to input a pdf file and interact with an AI Chatbot with possible questions. If needed, users can activate a voice-reading feature with gTTP for the answer that the OpenAI assistant responded. 
+Buddies AI offers a Streamlit and OpenAI-based interactive chatbot, designed primarily for the elderly to easily engage with digital content. This chatbot specializes in processing PDF documents, enabling users to query and discuss their contents. It features a voice-reading capability using Google's Text-to-Speech (gTTS) for auditory responses. Originating from a Hackathon project themed around Companionship, its goal is to connect the elderly with the digital world, simplifying the challenge of reading lengthy texts in PDFs and understanding chatbot responses.
 
 # What Buddies AI Can Do For You
-Experience effortless technology with Buddies AI, bridging the elderly and the digital world. Our chatbot empowers those challenged by technology, offering:
+Our chatbot empowers those challenged by technology, offering:
 
 1. An easy-to-use solution for adapting to the fast-paced, technology-driven world, perfect for those not familiar with AI and modern tech.
 2. Personalized assistance in understanding and using new technological tools, making life simpler and more connected.
