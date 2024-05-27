@@ -14,6 +14,10 @@ Our chatbot empowers those challenged by technology, offering:
 <img alt="Screenshot 2024-01-28 at 12 13 00 PM" src="https://github.com/leiassyun/Buddies_AI/assets/121903773/0c7cd6e3-c876-4c36-b27e-4409d978b2a9" width="450"/> 
 
 
+## DEMO
+
+https://github.com/leiassyun/Buddies_AI/assets/121749634/f6bf2a23-b993-4139-8bcb-9b623d6d90b3
+
 ## Installation
 
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install Buddies_AI.
@@ -21,14 +25,6 @@ Use the package manager [pip](https://pip.pypa.io/en/stable/) to install Buddies
 ```bash
 pip install -r requirements.txt
 ```
-
-## DEMO
-
-https://github.com/leiassyun/Buddies_AI/assets/121749634/f6bf2a23-b993-4139-8bcb-9b623d6d90b3
-
-
-
-
 
 
 # Contributing
